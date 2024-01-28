@@ -4,7 +4,7 @@ This is a voice assistant program written in Python that utilizes various librar
 
 ## Requirements
 
-Make sure you have the following Python libraries installed:
+Make sure you have the following libraries installed:
 
 - `pyttsx3`
 - `speech_recognition`
@@ -15,6 +15,7 @@ Make sure you have the following Python libraries installed:
 - `jokes`
 - `Weather`
 - `datetime`
+- `conda- PyAudio`
 
 You can install these libraries using pip:
 
