@@ -39,12 +39,12 @@ with sr.Microphone() as source:
 if "what" and "about" and "you" or "How" and "are" and "you" in text:
     speak("I'm having a good day, sir")
 
-with sr.Microphone() as source:
-    r.energy_threshold=10000
-    r.adjust_for_ambient_noise(source,1.2)
-    print("Listening..")
-    audio=r.listen(source)
-    text=r.recognize_google(audio)
+    with sr.Microphone() as source:
+        r.energy_threshold=10000
+        r.adjust_for_ambient_noise(source,1.2)
+        print("Listening..")
+        audio=r.listen(source)
+        text=r.recognize_google(audio)
 
 if "information" in text2:
     speak("you need information related to which field?")
